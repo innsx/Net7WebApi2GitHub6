@@ -24,6 +24,9 @@ namespace Net7WebApi2GitHub6.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            /// <summary>
+            /// add comment in GitHub
+            /// </summary>
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
